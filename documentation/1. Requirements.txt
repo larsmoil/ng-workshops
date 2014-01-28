@@ -9,6 +9,5 @@ Filter:
 - Should support a custom separator
 - Should fall back to space
 
-Controller:
- - Should attach a list of awesomeThings to the scope
-
+Technical requirements:
+- Use if statements for the logic, not regular expressions yet.
