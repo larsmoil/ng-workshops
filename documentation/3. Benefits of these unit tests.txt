@@ -1,0 +1,10 @@
+Benefits:
+
+	Development
+		- Ensure that the requirements are implemented, without manual tests of the code.
+		- Focus on one requirement at a time.
+		- Make sure nothing breaks while refactoring. 
+	Refactoring
+	    - Can run automatic tests to validate that the code still fulfills the original requirements.
+	New requirements
+	    - Make sure the old requirements that you still want to keep are valid for the new codebase.

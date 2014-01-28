@@ -1,3 +1,0 @@
-Filter:
-- Use the sign '-' between groups of numbers
-- input grouped in fours instead of threes

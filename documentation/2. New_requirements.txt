@@ -1,0 +1,6 @@
+Filter refactoring:
+     - Use Regular expressions
+
+Filter new requirements:
+	- Use the sign '-' between groups of numbers.
+	- Input grouped in fours instead of threes.
