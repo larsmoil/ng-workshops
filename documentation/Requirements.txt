@@ -1,0 +1,14 @@
+Filter: 
+- Should return the input grouped in threes
+    - 123456 -> 123 456
+    - 1234567890 -> 1 234 567 890
+- Should handle "falsy" values
+    - null -> ''
+    - undefined -> ''
+    - NaN -> ''
+- Should support a custom separator
+- Should fall back to space
+
+Controller:
+ - Should attach a list of awesomeThings to the scope
+
