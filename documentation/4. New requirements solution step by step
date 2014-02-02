@@ -1,0 +1,24 @@
+'use strict';
+
+angular.module('ngWorkshopsApp.filters')
+  .filter('number', function () {
+    return function (input) {
+      // Refactoring
+      //return (input)
+      //return (input || '')
+      //return (input || '').replace(/(\d{3})(\d{3})/,'$1 $2');
+      //return (input || '').replace(/(\d{3})/g, '$1 ');
+      //return (input || '').replace(/(\d{3})/g, '$1 ').trim();
+      //return (input || '').split("").reverse().join("").replace(/(\d{3})/g, '$1 ').trim();
+	  
+	  //New requirements
+	  //return (input || '').split("").reverse().join("").replace(/(\d{3})/g, '$1 ').trim();
+	  //return (input || '').split("").reverse().join("").replace(/(\d{3})/g, '$1-').replace(/-$/, '').split("").reverse().join("");
+	  //return (input || '').split("").reverse().join("").replace(/(\d{4})/g, '$1-').replace(/-$/, '').split("").reverse().join("");
+
+	  //Shorter soltuion, with more complex regexp
+	  //return (input || '').replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ');
+
+    };
+
+  });
