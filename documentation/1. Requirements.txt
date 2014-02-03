@@ -1,4 +1,4 @@
-Filter: 
+Filter:
 - Should return the input grouped in threes
     - 123456 -> 123 456
     - 1234567890 -> 1 234 567 890
@@ -10,4 +10,4 @@ Filter:
 - Should fall back to space
 
 Technical requirements:
-- Use if statements for the logic, not regular expressions yet.
+- Use if/while/for statements for the logic, not regular expressions yet.
