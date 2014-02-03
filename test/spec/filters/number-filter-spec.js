@@ -24,8 +24,18 @@ describe('Filter: number', function () {
   });
 
   describe('custom separators', function () {
-    it('should support a custom separator');
-    it('should fall back to space');
+
+    it('should support a custom separator', function () {
+      expect(number('123456', ',')).to.equal('123,456');
+      expect(number('123456', '.')).to.equal('123.456');
+      expect(number('123456', '-')).to.equal('123-456');
+    });
+
+    it('should fall back to space', function () {
+      expect(number('123456', '')).to.equal('123 456');
+      expect(number('123456', null)).to.equal('123 456');
+    });
+
   });
 
 });
